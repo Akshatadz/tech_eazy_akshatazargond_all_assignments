@@ -1,9 +1,10 @@
+
+
+
 # TechEazy AWS + DevOps Internship – All Assignments
 
 Name: Akshata Zargond  
 Email: akshata17003@gmail.com  
-
-===========================
 
 ## 1. Assignment 1: EC2 Automation with Shell Script
 
@@ -29,7 +30,6 @@ Email: akshata17003@gmail.com
 1.6 No .pem file uploaded to GitHub  
 1.7 No credentials or secrets hardcoded  
 
-===========================
 
 ## 2. Assignment 2: IAM + S3 + EC2 Automation
 
@@ -59,7 +59,6 @@ Email: akshata17003@gmail.com
 2.9 No credentials committed  
 2.10 .pem file was removed and excluded using .gitignore  
 
-===========================
 
 ## 3. Assignment 3: Terraform for AWS Infrastructure
 
@@ -98,13 +97,10 @@ Email: akshata17003@gmail.com
     
 3.7 Removed any accidentally pushed secrets using git filter-repo  
 
-===========================
 ### Final Notes:
 4.1 All assignments were tested in a real AWS account  
 4.2 Separate folders used: assignment_1, assignment_2, assignment_3  
  
-
-
 
 
 
