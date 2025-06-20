@@ -5,11 +5,12 @@ Email: akshata17003@gmail.com
 
 ===========================
 
-1. Assignment 1: EC2 Automation with Shell Script
+## 1. Assignment 1: EC2 Automation with Shell Script
 
 What I Did:
 
 1.1 Wrote a script named deploy.sh  
+
 1.2 The script performs:
     - Launches a t2.micro EC2 instance using Amazon Linux 2023 AMI  
     - Waits for 15 minutes (to simulate workload)  
@@ -32,7 +33,8 @@ Security:
 
 2. Assignment 2: IAM + S3 + EC2 Automation
 
-What I Did:
+### What I Did:
+
 2.1 Created two IAM roles: 
 
     - Role_A: Read-only access to S3  
@@ -43,11 +45,13 @@ What I Did:
 2.4 Created a private S3 bucket named tech-eazy-akshata-logs  
 2.5 Applied a lifecycle rule to auto-delete logs after 7 days  
 
-How I Tested:
-2.6 SSH into EC2 instance using `.pem`  
+### How I Tested:
+2.6 SSH into EC2 instance using `.pem` 
+
 2.7 Ran inside instance:  
     `echo "log data" > dummy.log`  
-    `aws s3 cp dummy.log s3://tech-eazy-akshata-logs/sample-log.log`  
+    `aws s3 cp dummy.log s3://tech-eazy-akshata-logs/sample-log.log`
+    
 2.8 Verified Role_A by running:  
     `aws s3 ls s3://tech-eazy-akshata-logs`  
 
@@ -57,7 +61,7 @@ Security:
 
 ===========================
 
-3. Assignment 3: Terraform for AWS Infrastructure
+## 3. Assignment 3: Terraform for AWS Infrastructure
 
 What I Did:
 3.1 Used Terraform to create:
