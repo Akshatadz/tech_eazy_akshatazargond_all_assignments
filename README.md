@@ -117,6 +117,7 @@ Terraform IAM Role
 ![Terraform IAM Role](https://raw.githubusercontent.com/Akshatadz/tech_eazy_akshatazargond_all_assignments/final-submission/screenshots/screenshots4_Role_B_Assignment3.png)
 
 
+
 ### Final Notes:
 4.1 All assignments were tested in a real AWS account  
 4.2 Separate folders used: assignment_1, assignment_2, assignment_3  
