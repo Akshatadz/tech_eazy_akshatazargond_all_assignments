@@ -109,8 +109,6 @@ Email: akshata17003@gmail.com
 
 
 
-
-
 ### Final Notes:
 4.1 All assignments were tested in a real AWS account  
 4.2 Separate folders used: assignment_1, assignment_2, assignment_3  
