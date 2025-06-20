@@ -1,84 +1,92 @@
-## TechEazy AWS + DevOps Internship – All Assignments
-Name: Akshata Zargond
-Email: akshata17003@gmail.com
+# TechEazy AWS + DevOps Internship – All Assignments
 
- ### Assignment 1: EC2 Automation with Shell Script
-What I did:
+Name: Akshata Zargond  
+Email: akshata17003@gmail.com  
 
--- Wrote a script deploy.sh to automate EC2 tasks.
-The script does three things:
+===========================
+1. Assignment 1: EC2 Automation with Shell Script
 
-1.Launches a t2.micro EC2 instance using Amazon Linux 2023 AMI.
+What I Did:
+1.1 Wrote a script named deploy.sh  
+1.2 The script performs:
+    - Launches a t2.micro EC2 instance using Amazon Linux 2023 AMI  
+    - Waits for 15 minutes (to simulate workload)  
+    - Stops the instance automatically to save cost  
 
-2.Waits 15 minutes to simulate some work.
-
-3.Stops the instance to save cost.
-
-#### How I ran it:
-
-I used Git Bash and ran:
-bash deploy.sh
-Before that, I set up AWS CLI and made sure a key pair named mykey was available.
+How I Ran It:
+1.3 Used Git Bash terminal  
+1.4 Ran the command: `bash deploy.sh`  
+1.5 Made sure:
+    - AWS CLI is configured  
+    - A key pair named 'mykey' exists  
 
 Security:
-.pem file not uploaded to GitHub.
-No credentials added.
+1.6 No .pem file uploaded to GitHub  
+1.7 No credentials or secrets hardcoded  
 
-### Assignment 2: IAM + S3 + Automation Script
-What I did:
-Created 2 IAM roles:
+===========================
+2. Assignment 2: IAM + S3 + EC2 Automation
 
-1.Role_A: Can only read files from S3.
-2.Role_B: Can only upload/write files to S3.
-3.Launched EC2 and attached Role_B.
+What I Did:
+2.1 Created two IAM roles:  
+    - Role_A: Read-only access to S3  
+    - Role_B: Write-only access to S3  
+2.2 Launched an EC2 instance with Role_B attached  
+2.3 Updated deploy.sh to upload a dummy log to S3  
+2.4 Created a private S3 bucket named tech-eazy-akshata-logs  
+2.5 Applied a lifecycle rule to auto-delete logs after 7 days  
 
-4.Used script to upload a log file to my S3 bucket tech-eazy-akshata-logs.
+How I Tested:
+2.6 SSH into EC2 instance using `.pem`  
+2.7 Ran inside instance:  
+    `echo "log data" > dummy.log`  
+    `aws s3 cp dummy.log s3://tech-eazy-akshata-logs/sample-log.log`  
+2.8 Verified Role_A by running:  
+    `aws s3 ls s3://tech-eazy-akshata-logs`  
 
-5.Added a rule to delete files after 7 days.
+Security:
+2.9 No credentials committed  
+2.10 .pem file was removed and excluded using .gitignore  
 
-#### How I tested:
- -- SSH into EC2.
+===========================
+3. Assignment 3: Terraform for AWS Infrastructure
 
--- Created dummy log file and uploaded using:
+What I Did:
+3.1 Used Terraform to create:
+    - EC2 instance  
+    - IAM Role_B  
+    - IAM instance profile to attach Role_B to EC2  
+3.2 Wrote everything inside main.tf  
 
---- aws s3 cp dummy.log s3://tech-eazy-akshata-logs/sample-log.log
---- Checked from Role_A using:
+How I Deployed:
+3.3 Ran the following commands:
+    `terraform init`  
+    `terraform validate`  
+    `terraform apply`  
 
-aws s3 ls s3://tech-eazy-akshata-logs
+How I Tested:
+3.4 SSH into EC2, then:
+    `echo "log data" > dummy.log`  
+    `aws s3 cp dummy.log s3://tech-eazy-akshata-logs/`  
 
-### Assignment 3: Terraform for AWS Infrastructure
+To Clean Up:
+3.5 Ran: `terraform destroy`  
 
-#### What I did:
-1.Used main.tf file to create:
-2.EC2 instance
-3.IAM Role_B with S3 write access
-4.IAM instance profile to attach role to EC2
-5.Uploaded logs from EC2 to S3
+Security:
+3.6 Used .gitignore to exclude:
+    - *.pem  
+    - *.log  
+    - *.tfstate and backup files  
+    - .terraform/ directory  
+3.7 Removed any accidentally pushed secrets using git filter-repo  
 
-#### How I deployed:
-
-terraform init
-terraform validate
-terraform apply
-
-#### How I tested:
-echo "log data" > dummy.log
-aws s3 cp dummy.log s3://tech-eazy-akshata-logs/
-
-#### To clean up:
-terraform destroy
-
-####  Security 
-Used .gitignore to exclude:
-.pem files
-.log, .tfstate, .terraform/ folders
-Did not push credentials or secrets
+===========================
+Final Notes:
+4.1 All assignments were tested in a real AWS account  
+4.2 Separate folders used: assignment_1, assignment_2, assignment_3  
+ 
 
 
 
-#### Notes
-All tasks tested on real AWS account
 
-.pem file deleted securely from GitHub
 
-Repository cleaned up using .gitignore and git filter-repo
