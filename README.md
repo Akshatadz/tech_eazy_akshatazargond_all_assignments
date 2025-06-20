@@ -105,7 +105,8 @@ Email: akshata17003@gmail.com
 3.7 Removed any accidentally pushed secrets using git filter-repo  
 
 ### Screenshot:
-![Terraform IAM Role](screenshots/screenshots4_Role_B_Assignment3.png)
+[![Terraform IAM Role](screenshots/screenshots4_Role_B_Assignment3.png)](screenshots/screenshots4_Role_B_Assignment3.png)
+
 
 
 
