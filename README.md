@@ -30,7 +30,9 @@ Email: akshata17003@gmail.com
 1.6 No .pem file uploaded to GitHub  
 1.7 No credentials or secrets hardcoded
 
-**Screenshot:**
+Screenshot:EC2 Stopped
+
+**Screenshot:** 
 ![EC2 Stopped](https://raw.githubusercontent.com/Akshatadz/tech_eazy_akshatazargond_all_assignments/final-submission/screenshots/screenshots1_ec2_stopped.png)
 
 
@@ -61,6 +63,10 @@ Email: akshata17003@gmail.com
 ### Security:
 2.9 No credentials committed  
 2.10 .pem file was removed and excluded using .gitignore  
+
+Screenshot:
+1.S3 Bucket
+2. Role B attached
 
 ### Screenshots:
 ![S3 Bucket](https://raw.githubusercontent.com/Akshatadz/tech_eazy_akshatazargond_all_assignments/final-submission/screenshots/screenshots2_s3_bucket.png)  
@@ -102,7 +108,10 @@ Email: akshata17003@gmail.com
     - *.tfstate and backup files  
     - .terraform/ directory  
     
-3.7 Removed any accidentally pushed secrets using git filter-repo  
+3.7 Removed any accidentally pushed secrets using git filter-repo 
+
+### Screenshot:  
+Terraform IAM Role
 
 ### Screenshot:
 ![Terraform IAM Role](https://raw.githubusercontent.com/Akshatadz/tech_eazy_akshatazargond_all_assignments/final-submission/screenshots/screenshots4_Role_B_Assignment3.png)
