@@ -28,12 +28,7 @@ Email: akshata17003@gmail.com
 ### Security:
 
 1.6 No .pem file uploaded to GitHub  
-1.7 No credentials or secrets hardcoded
-
-Screenshot:EC2 Stopped
-
-**Screenshot:** 
-![EC2 Stopped](https://raw.githubusercontent.com/Akshatadz/tech_eazy_akshatazargond_all_assignments/final-submission/screenshots/screenshots1_ec2_stopped.png)
+1.7 No credentials or secrets hardcoded  
 
 
 ## 2. Assignment 2: IAM + S3 + EC2 Automation
@@ -63,14 +58,6 @@ Screenshot:EC2 Stopped
 ### Security:
 2.9 No credentials committed  
 2.10 .pem file was removed and excluded using .gitignore  
-
-Screenshot:
-1.S3 Bucket
-2. Role B attached
-
-### Screenshots:
-![S3 Bucket](https://raw.githubusercontent.com/Akshatadz/tech_eazy_akshatazargond_all_assignments/final-submission/screenshots/screenshots2_s3_bucket.png)  
-![Role B Attached](https://raw.githubusercontent.com/Akshatadz/tech_eazy_akshatazargond_all_assignments/final-submission/screenshots/screenshots3_ec2_role_b.png)
 
 
 ## 3. Assignment 3: Terraform for AWS Infrastructure
@@ -108,15 +95,7 @@ Screenshot:
     - *.tfstate and backup files  
     - .terraform/ directory  
     
-3.7 Removed any accidentally pushed secrets using git filter-repo 
-
-### Screenshot:  
-Terraform IAM Role
-
-### Screenshot:
-![Terraform IAM Role](https://raw.githubusercontent.com/Akshatadz/tech_eazy_akshatazargond_all_assignments/final-submission/screenshots/screenshots4_Role_B_Assignment3.png)
-
-
+3.7 Removed any accidentally pushed secrets using git filter-repo  
 
 ### Final Notes:
 4.1 All assignments were tested in a real AWS account  
