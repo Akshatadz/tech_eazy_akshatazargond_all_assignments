@@ -31,7 +31,7 @@ Email: akshata17003@gmail.com
 1.7 No credentials or secrets hardcoded
 
 **Screenshot:**
-[![EC2 Stopped](screenshots/screenshots1_ec2_stopped.png)](screenshots/screenshots1_ec2_stopped.png)
+[![EC2 Stopped]("C:\Users\Admin\Desktop\tech_eazy_akshatazargond_all_assignments\screenshots\screenshots1_ec2_stopped.png")]
 
 
 
