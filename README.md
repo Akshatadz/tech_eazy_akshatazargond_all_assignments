@@ -14,7 +14,7 @@ The script does three things:
 
 3.Stops the instance to save cost.
 
-### How I ran it:
+#### How I ran it:
 
 I used Git Bash and ran:
 bash deploy.sh
@@ -36,7 +36,7 @@ Created 2 IAM roles:
 
 5.Added a rule to delete files after 7 days.
 
-### How I tested:
+#### How I tested:
  -- SSH into EC2.
 
 -- Created dummy log file and uploaded using:
@@ -48,27 +48,27 @@ aws s3 ls s3://tech-eazy-akshata-logs
 
 ### Assignment 3: Terraform for AWS Infrastructure
 
-### What I did:
+#### What I did:
 1.Used main.tf file to create:
 2.EC2 instance
 3.IAM Role_B with S3 write access
 4.IAM instance profile to attach role to EC2
 5.Uploaded logs from EC2 to S3
 
-### How I deployed:
+#### How I deployed:
 
 terraform init
 terraform validate
 terraform apply
 
-### How I tested:
+#### How I tested:
 echo "log data" > dummy.log
 aws s3 cp dummy.log s3://tech-eazy-akshata-logs/
 
-### To clean up:
+#### To clean up:
 terraform destroy
 
-### Security 
+####  Security 
 Used .gitignore to exclude:
 .pem files
 .log, .tfstate, .terraform/ folders
@@ -76,7 +76,7 @@ Did not push credentials or secrets
 
 
 
-### Notes
+#### Notes
 All tasks tested on real AWS account
 
 .pem file deleted securely from GitHub
