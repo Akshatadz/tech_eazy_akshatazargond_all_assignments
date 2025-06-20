@@ -7,7 +7,7 @@ Email: akshata17003@gmail.com
 
 ## 1. Assignment 1: EC2 Automation with Shell Script
 
-What I Did:
+### What I Did:
 
 1.1 Wrote a script named deploy.sh  
 
@@ -16,7 +16,7 @@ What I Did:
     - Waits for 15 minutes (to simulate workload)  
     - Stops the instance automatically to save cost  
 
-How I Ran It:
+### How I Ran It:
 
 1.3 Used Git Bash terminal  
 1.4 Ran the command: `bash deploy.sh`  
@@ -24,14 +24,14 @@ How I Ran It:
     - AWS CLI is configured  
     - A key pair named 'mykey' exists  
 
-Security:
+### Security:
 
 1.6 No .pem file uploaded to GitHub  
 1.7 No credentials or secrets hardcoded  
 
 ===========================
 
-2. Assignment 2: IAM + S3 + EC2 Automation
+## 2. Assignment 2: IAM + S3 + EC2 Automation
 
 ### What I Did:
 
@@ -55,7 +55,7 @@ Security:
 2.8 Verified Role_A by running:  
     `aws s3 ls s3://tech-eazy-akshata-logs`  
 
-Security:
+### Security:
 2.9 No credentials committed  
 2.10 .pem file was removed and excluded using .gitignore  
 
@@ -63,7 +63,7 @@ Security:
 
 ## 3. Assignment 3: Terraform for AWS Infrastructure
 
-What I Did:
+### What I Did:
 3.1 Used Terraform to create:
     - EC2 instance  
     - IAM Role_B  
@@ -71,24 +71,24 @@ What I Did:
     
 3.2 Wrote everything inside main.tf  
 
-How I Deployed:
+### How I Deployed:
 
 3.3 Ran the following commands:
     `terraform init`  
     `terraform validate`  
     `terraform apply`  
 
-How I Tested:
+### How I Tested:
 
 3.4 SSH into EC2, then:
     `echo "log data" > dummy.log`  
     `aws s3 cp dummy.log s3://tech-eazy-akshata-logs/`  
 
-To Clean Up:
+### To Clean Up:
 
 3.5 Ran: `terraform destroy`  
 
-Security:
+### Security:
 
 3.6 Used .gitignore to exclude:
     - *.pem  
@@ -99,7 +99,7 @@ Security:
 3.7 Removed any accidentally pushed secrets using git filter-repo  
 
 ===========================
-Final Notes:
+### Final Notes:
 4.1 All assignments were tested in a real AWS account  
 4.2 Separate folders used: assignment_1, assignment_2, assignment_3  
  
