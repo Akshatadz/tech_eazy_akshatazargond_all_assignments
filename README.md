@@ -132,34 +132,7 @@ Email: akshata17003@gmail.com
 
 ### How I Deployed:
 
-Ran the following commands:
-```bash
-terraform init  
-terraform validate  
-terraform apply  
-
-Then submitted job:
-
-aws batch submit-job \
-  --job-name hello-batch-job \
-  --job-queue akshata-job-queue \
-  --job-definition akshata-job-definition
-
-Testing:
-Verified the job status transitioned from Runnable → Succeeded
-
-Checked job logs and dashboard
-
-Security:
-IAM roles used properly
-
-.tfstate, secrets, and keys excluded with .gitignore
-
-S3 bucket was private and lifecycle rule applied
-
-## Screenshots
-
-##Screenshots
+## 📸 Screenshots
 
 ### EC2 Instance Role creation  
 ![EC2 Instance Role](https://raw.githubusercontent.com/Akshatadz/tech_eazy_akshatazargond_all_assignments/main/assignment_4/screenshots/ecs_instance_role.png)
@@ -189,7 +162,30 @@ S3 bucket was private and lifecycle rule applied
 ![Job Success](https://raw.githubusercontent.com/Akshatadz/tech_eazy_akshatazargond_all_assignments/main/assignment_4/screenshots/batch_job_success_dashboard.png)
 
 
+## Ran the following commands:
+```bash
+terraform init  
+terraform validate  
+terraform apply  
 
+Then submitted job:
+
+aws batch submit-job \
+  --job-name hello-batch-job \
+  --job-queue akshata-job-queue \
+  --job-definition akshata-job-definition
+
+Testing:
+Verified the job status transitioned from Runnable → Succeeded
+
+Checked job logs and dashboard
+
+Security:
+IAM roles used properly
+
+.tfstate, secrets, and keys excluded with .gitignore
+
+S3 bucket was private and lifecycle rule applied
 
 
 ### Final Notes:
