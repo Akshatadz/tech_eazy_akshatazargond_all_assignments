@@ -1,4 +1,4 @@
-## ✅ Assignment 4: AWS Batch with Terraform + CLI
+##  Assignment 4: AWS Batch with Terraform + CLI
 
 ###  What I Did:
 - Created IAM Role for Batch execution
