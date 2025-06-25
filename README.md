@@ -111,9 +111,88 @@ Email: akshata17003@gmail.com
 ![Terraform IAM Role](https://raw.githubusercontent.com/Akshatadz/tech_eazy_akshatazargond_all_assignments/main/screenshots/screenshots4_Role_B_Assignment3.png)
 
 
+
+## 4. Assignment 4: AWS Batch with Terraform + CLI
+
+### What I Did:
+
+4.1 Created IAM Role for AWS Batch execution  
+4.2 Defined Batch **Compute Environment** using EC2  
+4.3 Configured **Job Queue** and **Job Definition** via Terraform  
+4.4 Wrote a shell script (`job-script.sh`) that echoes a message  
+4.5 Uploaded the shell script to an **S3 bucket**  
+4.6 Submitted a Batch job using **AWS CLI**
+
+### Technologies Used:
+- Terraform  
+- AWS Batch  
+- IAM Roles  
+- S3  
+- AWS CLI
+
+### How I Deployed:
+
+Ran the following commands:
+```bash
+terraform init  
+terraform validate  
+terraform apply  
+
+Then submitted job:
+
+aws batch submit-job \
+  --job-name hello-batch-job \
+  --job-queue akshata-job-queue \
+  --job-definition akshata-job-definition
+
+Testing:
+Verified the job status transitioned from Runnable → Succeeded
+
+Checked job logs and dashboard
+
+Security:
+IAM roles used properly
+
+.tfstate, secrets, and keys excluded with .gitignore
+
+S3 bucket was private and lifecycle rule applied
+
+## 📸 Screenshots
+
+📸 Screenshots
+
+### EC2 Instance Role creation  
+![EC2 Instance Role](screenshots/ecs_instance_role.png)
+
+### IAM Role for Batch Execution  
+![Batch Execution Role](screenshots/batch_execution_role.png)
+
+### S3 Bucket Created  
+![S3 Bucket](screenshots/s3_bucket_created.png)
+
+### Terraform Apply Output  
+![Terraform Apply Output](screenshots/terraform_apply_success.png)
+
+### Batch Compute Environment  
+![Batch Compute Env](screenshots/batch_compute_environment.png)
+
+### Batch Job Queue  
+![Batch Job Queue](screenshots/batch_job_queue.png)
+
+### Batch Job Definition  
+![Batch Job Definition](screenshots/batch_job_definition.png)
+
+### Job Submitted via CLI  
+![Job Submitted](screenshots/batch_job_submitted_cli.png)
+
+### Job Dashboard (Success)  
+![Job Success](screenshots/batch_job_success_dashboard.png)
+
+
+
 ### Final Notes:
 4.1 All assignments were tested in a real AWS account  
-4.2 Separate folders used: assignment_1, assignment_2, assignment_3  
+4.2 Separate folders used: assignment_1, assignment_2, assignment_3 , assignment_4 
  
 
 
