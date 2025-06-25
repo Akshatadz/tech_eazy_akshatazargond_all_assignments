@@ -157,9 +157,9 @@ IAM roles used properly
 
 S3 bucket was private and lifecycle rule applied
 
-## 📸 Screenshots
+## Screenshots
 
-## 📸 Screenshots
+##Screenshots
 
 ### EC2 Instance Role creation  
 ![EC2 Instance Role](https://raw.githubusercontent.com/Akshatadz/tech_eazy_akshatazargond_all_assignments/main/assignment_4/screenshots/ecs_instance_role.png)
